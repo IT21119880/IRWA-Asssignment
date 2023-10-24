@@ -5,8 +5,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # Read the data from a .csv file
 @st.cache(allow_output_mutation=True)
-def load_data(filename):
-    data = pd.read_csv(filename)
+def load_data(movies.csv):
+    data = pd.read_csv(movies.csv)
     return data
 
 def recommend_movies(movie_title, cosine_sim=cosine_sim):
