@@ -38,4 +38,4 @@ movie_title = st.text_input('Enter a movie title', 'Toy Story (1995)')
 
 if st.button('Recommend'):
     similar_movies = recommend_movies(movie_title)
-    st.write('Recommended Movies:', similar_movies)
+    st.write('Recommended Movies:'+ similar_movies)
