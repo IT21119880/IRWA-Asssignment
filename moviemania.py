@@ -2,7 +2,10 @@ import streamlit as st
 import pandas as pd
 
 # Create a dictionary of movies and their genres (for demonstration)
-movie_data = pd.read_csv("movies.csv")
+movie_data = {
+    'Movie': ['Movie 1', 'Movie 2', 'Movie 3', 'Movie 4', 'Movie 5'],
+    'Genre': ['Action', 'Comedy', 'Drama', 'Horror', 'Adventure']
+}
 movie_df = pd.DataFrame(movie_data)
 
 # Create the Streamlit web app
